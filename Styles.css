@@ -1,0 +1,43 @@
+body{
+    background-color: #A7C7E7;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.title{
+    text-align: center;
+}
+
+.aboutMe{
+    align-items: center;
+    text-align: center;
+    border: solid white 1px;
+    height: 40%;
+    width: 50%;
+
+}
+
+.pdf-title:hover{
+    cursor: pointer;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.linkBlock {
+    width: 300px;
+    height: 400px;
+    background: black;
+    border-radius: 8px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
