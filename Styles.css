@@ -1,0 +1,99 @@
+body {
+    background-color: #A7C7E7;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+.titles{
+    font-weight: bolder;
+}
+
+.divAM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe {
+    text-align: center;
+    border: solid white 1px;
+    height: 40%;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.pdf-title:hover {
+    cursor: pointer;
+}
+
+.linkContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.linkBlock {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 200px;
+    min-width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .linkBlock {
+        flex: 1 1 calc(50% - 20px);
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .linkBlock {
+        flex: 1 1 100%;
+        height: 200px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.project-table {
+    width: 80%;
+}
+
+.project-table th, .project-table td {
+    padding: 2%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.project-table embed, .project-table iframe {
+    display: block;
+    margin: 0 auto;
+}
