@@ -12,7 +12,7 @@ a {
 .title {
     text-align: center;
 }
-.titles{
+.titles {
     font-weight: bolder;
 }
 
@@ -33,6 +33,33 @@ a {
 
 .pdf-title:hover {
     cursor: pointer;
+}
+
+.pdf-container {
+    text-align: center;
+    margin: 20px auto;
+    height: 100%;
+}
+
+.pdf-container embed {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    max-height: 490px;
+}
+
+@media (max-width: 768px) {
+    .pdf-container embed {
+        width: 100%;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-container embed {
+        width: 100%;
+        height: 800px;
+    }
 }
 
 .linkContainer {
@@ -81,7 +108,7 @@ a {
 .nav-links a {
     padding: 10px 20px;
     border-radius: 5px;
-    justify-content: center;
+    text-align: center;
 }
 
 .project-table {
@@ -110,3 +137,4 @@ a {
         height: 700px;
         width: auto;
     }
+}
