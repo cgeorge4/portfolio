@@ -81,6 +81,7 @@ a {
 .nav-links a {
     padding: 10px 20px;
     border-radius: 5px;
+    justify-content: center;
 }
 
 .project-table {
