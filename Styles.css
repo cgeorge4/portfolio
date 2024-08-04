@@ -7,6 +7,7 @@ body {
 a {
     text-decoration: none;
     color: #001700;
+    position: relative;
 }
 
 .title {
@@ -109,6 +110,7 @@ a {
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
+    position: relative;
 }
 
 .nav-links a::after{
@@ -119,7 +121,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #001700;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
