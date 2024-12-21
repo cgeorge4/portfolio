@@ -1,14 +1,36 @@
-import Navbar from './components/Navbar';
-import './styles.css'; // Adjust the path to your CSS file
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './styles.css';
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Blender from './pages/Blender';
+import Unity from './pages/Unity';
+import TAP from './pages/TAP';
+import Certs from './pages/Certs';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <div>
         <Navbar />
-        {/* Add other components or content */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Blender" element={<Blender />} />
+          <Route path="/Unity" element={<Unity />} />
+          <Route path="/TAP" element={<TAP />} />
+          <Route path="/Certs" element={<Certs />} />
+        </Routes>
+      </div>
+    </Router>
+    /*<div className="App">
+      <div>
+        <Navbar />
       </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -24,7 +46,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>*/
   );
 }
 
