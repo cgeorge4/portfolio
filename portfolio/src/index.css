@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.contact_form .form-control {
+  padding: 1rem .75rem;
+  line-height: .75;
+  border-radius: 3 !important;
+  border: 1px solid black;
+}
+
+.contact_form input.form-control {
+  margin-bottom: 2em;
+  height: calc(2.5em + .75rem + 2px);
+
+}
+
+.btn {
+  border: 1px solid;
+  color: black;
+}
