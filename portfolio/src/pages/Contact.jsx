@@ -4,7 +4,7 @@ import { contactConfig } from '../components/ContactContent';
 
 const Contact = () => {
 
-    const [formData, setFormData] = useState({
+   {/* const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: '',
@@ -19,7 +19,7 @@ const Contact = () => {
         e.preventDefault();
         console.log("Form Data Submitted: ", formData);
         //Add logic to send data to a server or email API
-    };
+    };*/}
 
   return (
     <Container>
@@ -31,7 +31,7 @@ const Contact = () => {
 
         <Row className='sec_sp'>
             <Col lg='5' className='mb-5'>
-                <h3 className='color_sec py-4'>Get in touch</h3>
+                {/** <h3 className='color_sec py-4'>Get in touch</h3>*/}
                 <address>
                     <strong>Email: ca.geor97@gmail.com</strong>
                     <br />
@@ -42,7 +42,7 @@ const Contact = () => {
                 </address>
                 <p>{contactConfig.description}</p>
             </Col>
-            <Col lg='7' className='d-flex align-items-center'>
+            {/*<Col lg='7' className='d-flex align-items-center'>
                 <form className='contact_form w-100' onSubmit={ handleSubmit }>
                     <Row>
                         <Col lg='6' className='form-group'>
@@ -85,7 +85,7 @@ const Contact = () => {
                         </Col>
                     </Row>
                 </form>
-            </Col>
+            </Col>*/}
         </Row>
     </Container>
   );
